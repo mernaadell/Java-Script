@@ -18,6 +18,67 @@ console.log(t)
     console.log(e)
     //->objects
     //objects(key,value),functions(block ofcode),arrays,dates,collections
+    let obj={
+       // proprity:value
+       name:"merna",
+       age:22,
+       walk:function(){
+           console.log("hi from method",this.name)
+       },
+       walk2(){
+           console.log("no need to write function here",this.name)
+           var that=this.name
+           function inside (){
+               console.log(that)
+           }
+           inside()
+           inside2= ()=>{
+               console.log(this.name)//hna btshofha 3ady
+
+           }
+           inside2()
+       }
+
+       
+    }
+    console.log("age",obj.age)
+    console.log(obj["name"])//lazem ""
+    obj.name="mayar"
+    obj.city="alex"
+    console.log(obj.city)
+    delete obj.city //delete one
+    console.log(obj.walk2())
+    let obj2={
+        name:"mohamed",
+        age:23
+    } //iterate over obj2
+    for (let i in obj2){
+        console.log("obj2",i," ",obj2[i])
+    }
+    let obj3={
+        name:"mohamed",
+        age:23
+    }
+//Comparing Objects 
+    console.log(obj2==obj3)//false
+    let obj4=obj2//true
+    obj4.name="adel"//hyt8yarfe l atnen 3shan l reference wa7ed
+//Factory & Constructor 
+    //factory
+    function fac(name,age){
+        return{
+            name,age
+        }
+    }
+    let me=fac("m",11)//3mlt return mn function in me
+    console.log(me)
+    //Constructor 
+    function cons(name,age){
+        this.name=name
+        this.age=age
+    }
+    let me2=new cons("h",112) //b3ml instance mno
+    console.log(me2)
     //mutable ->you can change a part of value(array,object)
     //unmutable ->you cant(string,numbers)
 //--------------opertaors----------

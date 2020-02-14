@@ -58,3 +58,8 @@ let c=()=>{
 (function fun(x){
     console.log("hello")
 })(10) //mynf3sh a3mlha call tani
+//hoisting
+    //an l engine bta3y 2abl ma ycompile l code by3mlo scan 
+    //ano y5zan l variables bs mn 8er values w ano y3raf l functions eliim3mola btre2a function( mesh assignment)
+//ASI
+    //by7ot l semicolon by default
