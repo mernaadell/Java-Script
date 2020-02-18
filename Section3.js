@@ -51,7 +51,7 @@
 //Mapping
     arr.forEach(e=>console.log(e)) //loop bta5od call back function
    let a=arr.map(e=>e++)//l nateg elii b3mal 3leh op arg3ofe arr gdeda call back function a3ml elii ana 3wzah fe array elements
-   console.log(a)
+   console.log("hi",a)
    console.log(arr.reduce((p,c)=>p+c)) //bta5od 2 parameters previous =0and current awal element
    console.log(arr.reduceRight((p,c)=>p+c))//mn l ymen
    console.log(typeof arr)
@@ -97,9 +97,44 @@
     let [c,...z2]=g2
     console.log(z2) //array of 2 elements
 //Array Constructor
-    let u=Array(5)
+    let u=Array(5) //size
     console.log(u)
-    let u2=Array.of(1,2,3)
+    let u2=Array.of(1,2,3)//elements
     console.log(u2)
+    let u3=Array.from({length:5},(e,i)=>i) //y3ml array mn lengh 5  w ymlah b l function  i -> index e->elements elii f array
+    console.log(u3)
+// Arrays are by Reference 
+    let a2=[1,2,3]
+    let b2=[5,19,3]
+    b2=a2
+    a2[2]=18//by reference
+    console.log(b2)
+    b2=Array(a)
+    b2[0]=17
+    console.log(a2)//mesh htt8yar hna by vlue
+//Type Conversion
+    //bsta5od l constructor
+    let x2=Number("")
+    console.log(x2)
+    x3=parseInt("5")
+    console.log(x3)
+    let a3=[1,2,3]
+    a4=Object(a3) //hya hya 3shan  array 3obara 3n object
+    console.log(a4)
+    x3=Object(x3)
+    console.log(x3) //Math Object
+    let x=Math.floor(5.2)
+    console.log(x,Math.E)
+    let y=[1,3,5,2,4]
+    console.log(Math.min(...y))
+    console.log(Math.random()) //mn 0 l 1
+    console.log(Math.random()*10)
+//Strict Mode -
+    r=10//global
+    console.log(r)
+    'use strict'
+    j=20
+    console.log(j)//prop hya l type
+
 
 
