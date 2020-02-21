@@ -104,7 +104,12 @@
 //Remove Elements
     p2.remove()
     div.removeChild(div.firstElementChild)
-    
+//Input File
+    let file=document.getElementsByClassName("file")
+    console.log("file",file)
+    console.log(file.value)//mesh hygblii elii gwa
+    console.log(file.files)//hygbliiobject gwah kol 7aga
+
 
 
 
