@@ -49,7 +49,7 @@
     console.log(arr2.every(e=> e>1 ))//boolean 3la kol l elements
     console.log(arr2.some(e=> e>1 ))//wa7ed atleast
 //Mapping
-    arr.forEach(e=>console.log(e)) //loop bta5od call back function
+   arr.forEach(e=>console.log(e)) //loop bta5od call back function
    let a=arr.map(e=>e++)//l nateg elii b3mal 3leh op arg3ofe arr gdeda call back function a3ml elii ana 3wzah fe array elements
    console.log("hi",a)
    console.log(arr.reduce((p,c)=>p+c)) //bta5od 2 parameters previous =0and current awal element
@@ -84,6 +84,8 @@
         c:3
     }
     let {f,g,h}=ob
+    console.log("hi mon")
+
     console.log(f)
 //Spread Operator
     let g2=[1,2,3]
@@ -123,10 +125,10 @@
     console.log(a4)
     x3=Object(x3)
     console.log(x3) //Math Object
-    let x=Math.floor(5.2)
+    let x5=Math.floor(5.2)
     console.log(x,Math.E)
-    let y=[1,3,5,2,4]
-    console.log(Math.min(...y))
+    let y5=[1,3,5,2,4]
+    console.log(Math.min(...y5))
     console.log(Math.random()) //mn 0 l 1
     console.log(Math.random()*10)
 //Strict Mode -

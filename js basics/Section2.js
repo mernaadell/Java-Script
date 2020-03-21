@@ -1,13 +1,17 @@
 //------functions
+//function name(par){}
 function pow(x,y){
     console.log(x**y)
 }
 pow(2,5)
+//let pw= w call b pw
 let pw=function pow(x,y){
     console.log(x**y)
 }
-pow(2,5)
+pw(2,5)
 //higher order fuction
+//ashel l asm 
+//b3ml return l func tanya
 let pw1=function (){
     console.log("hi1")
     return function second(){
@@ -16,17 +20,19 @@ let pw1=function (){
 }
 console.log(pw1())
 //arrow function
+//ashel klmt func w a3ml arrow 
 let pw2= first =>{
     console.log("hi2")
     
 }
 console.log(pw2(2))
-
+//ashel l asm
 let pw3= () =>{
     console.log("hi3")
     
 }
 console.log(pw3())
+//kda awal para
 let pw4= x =>{ //take one parameter
     console.log("hi4",x)
     
@@ -35,7 +41,7 @@ console.log(pw4(1))
 let pw5= x =>x //y3ml return l x
 console.log(pw5(29))
 //pure function
-y=1 
+y=1  //global
 let inc=(x)=>{ //law adat ll function y hy8yar feha
     x++
     return x

@@ -2,18 +2,20 @@ console.log("hello") //output
 let name="merna"
 let x=10
 console.log(x)
-x="hi" //dynamic type
+
+x="hi" //dynamic type 8yart l type 3ady
 console.log(x)
+
 const t=11
 //t=1 //error
 console.log(t)
 //-----------data types-------------
     //->premitives
-    //boolean,numbers,string,null,undefiend,Nan,symbol
+    //boolean,numbers,string,null,undefiend,NAN,symbol
     let b=true
     console.log(typeof(b))//boolean
     let s
-    console.log(typeof s)//undefined idont know what is inside the box
+    console.log(typeof s)//undefined  i dont know what is inside the box
     let e=null //i know the box is empty
     console.log(e)
     //->objects
@@ -24,10 +26,11 @@ console.log(t)
        age:22,
        walk:function(){
            console.log("hi from method",this.name)
-       },
+       }
+       ,
        walk2(){
            console.log("no need to write function here",this.name)
-           var that=this.name
+           var that=this.name //elii gwa l object
            function inside (){
                console.log(that)
            }
@@ -77,8 +80,9 @@ console.log(t)
         this.name=name
         this.age=age
     }
+    console.log("meme")
     let me2=new cons("h",112) //b3ml instance mno
-    console.log(me2)
+    console.log(me2.age)
     //mutable ->you can change a part of value(array,object)
     //unmutable ->you cant(string,numbers)
 //--------------opertaors----------
